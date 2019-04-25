@@ -1,13 +1,19 @@
 extends Node
 
-# Declare member variables here. Examples:
-# var a = 2
-# var b = "text"
+'''var Player;
+var GameState;
+var GUI;
 
-# Called when the node enters the scene tree for the first time.
+var jump_sfx;
+var pain_sfx;
+
+var Level1="res://HoppyDays/Scenes/Levels/Level1.tscn"
+var GameOver="res://HoppyDays/Scenes/Levels/GameOver.tscn"
+var GameWin="res://HoppyDays/Scenes/Levels/GameWin.tscn"
+var Lightning="res://HoppyDays/Scenes/Lightning.tscn"'''
+
+
 func _ready():
 	pass # Replace with function body.
 
-# Called every frame. 'delta' is the elapsed time since the previous frame.
-#func _process(delta):
-#	pass
+
