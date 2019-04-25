@@ -1,4 +1,21 @@
-[gd_scene format=2]
+[gd_scene load_steps=4 format=2]
+
+[ext_resource path="res://Videojoc/Escenas/new_tileset.tres" type="TileSet" id=1]
+[ext_resource path="res://Videojoc/Escenas/Player.tscn" type="PackedScene" id=2]
+[ext_resource path="res://Videojoc/Escenas/Camera2D.tscn" type="PackedScene" id=3]
 
 [node name="Level1" type="Node2D"]
+
+[node name="TileMap" type="TileMap" parent="."]
+tile_set = ExtResource( 1 )
+format = 1
+tile_data = PoolIntArray( 131080, 536870915, 0, 131081, 536870915, 0, 262160, 536870926, 0, 262162, 13, 0, 262164, 19, 0, 262171, 19, 0, 262173, 15, 0, 262175, 15, 0, 262177, 15, 0, 262179, 14, 0, 327694, 536870926, 0, 327717, 14, 0, 393216, 13, 0, 393218, 13, 0, 393220, 4, 0, 393222, 15, 0, 393224, 4, 0, 393226, 15, 0, 393228, 4, 0, 393232, 536870923, 0, 393234, 16, 0, 393236, 16, 0, 393243, 11, 0, 393245, 11, 0, 393247, 16, 0, 393249, 16, 0, 393251, 16, 0, 393255, 14, 0, 458766, 536870923, 0, 458789, 16, 0, 458793, 17, 0, 458795, 17, 0, 458797, 17, 0, 524288, 536870917, 0, 524290, 536870923, 0, 524292, 536870917, 0, 524294, 536870923, 0, 524296, 536870923, 0, 524298, 536870917, 0, 524300, 536870917, 0, 524302, 536870917, 0, 524304, 536870923, 0, 524306, 11, 0, 524308, 11, 0, 524315, 11, 0, 524317, 11, 0, 524319, 16, 0, 524321, 16, 0, 524323, 16, 0, 524325, 16, 0, 524327, 16, 0, 524329, 5, 0, 524331, 5, 0, 524333, 5, 0 )
+
+[node name="Player" parent="." instance=ExtResource( 2 )]
+position = Vector2( 77.3559, 337.553 )
+
+[node name="Camera2D" parent="Player" instance=ExtResource( 3 )]
+current = true
+limit_left = -80
+limit_bottom = 3200
 
