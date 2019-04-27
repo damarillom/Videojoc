@@ -1,0 +1,50 @@
+[gd_scene load_steps=6 format=2]
+
+[ext_resource path="res://Videojoc/Escenas/Enemy.gd" type="Script" id=1]
+[ext_resource path="res://Videojoc/GFX/Enemies/enemy1.png" type="Texture" id=2]
+
+[sub_resource type="RectangleShape2D" id=4]
+extents = Vector2( 37.3829, 1.25108 )
+
+[sub_resource type="SpriteFrames" id=2]
+animations = [ {
+"frames": [ ExtResource( 2 ) ],
+"loop": true,
+"name": "default",
+"speed": 5.0
+} ]
+
+[sub_resource type="CapsuleShape2D" id=5]
+radius = 39.0977
+height = 3.18544
+
+[node name="KinematicBody2D" type="KinematicBody2D"]
+collision_layer = 4
+script = ExtResource( 1 )
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2( 0, 44.5835 )
+shape = SubResource( 4 )
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="AnimatedSprite" type="AnimatedSprite" parent="."]
+frames = SubResource( 2 )
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="Area2D" type="Area2D" parent="."]
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
+position = Vector2( -0.857391, -5.14425 )
+shape = SubResource( 5 )
+__meta__ = {
+"_edit_lock_": true
+}
+
+[connection signal="body_entered" from="Area2D" to="." method="_on_Area2D_body_entered"]

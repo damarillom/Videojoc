@@ -15,15 +15,7 @@ func _ready():
 func  _physics_process(delta):
 	fall(delta)
 	run()
-	jump()
 	move_and_slide(motion, UP)
-	
-"""func _process(delta):
-	update_animation(motion)
-	
-func update_animation(motion):
-	$AnimatedSprite.update(motion)"""
-	
 	
 func fall(delta):
 	if is_on_floor() or is_on_ceiling():
@@ -31,11 +23,6 @@ func fall(delta):
 	else:
 		motion.y += GRAVITY * delta
 		#motion.x = 0
-	if position.y > world_limit:
-		#get_parent().end_game()
-		$AnimatedSprite.play("Die")
-		Global.GameState.end_game()
-	
 		
 func run():
 	"""if Input.is_action_pressed("ui_right") and not Input.is_action_pressed("ui_left"):
@@ -51,21 +38,17 @@ func run():
 		#$AnimatedSprite.play("idle")
 		#Para que no se voltee cuando este parado
 		#$AnimatedSprite.flip_h=false"""
-	motion.x = SPEED
-	if is_on_floor():
-		$AnimatedSprite.play("Walk")
-		
-		
-func jump():
-	if is_on_floor() and Input.is_action_pressed("ui_up"):
-		motion.y = JUMP_SPEED
-		$AnimatedSprite.play("Jump")
-		#Global.jump_sfx.play()
-		
-func hurt():
-	motion.y = JUMP_SPEED
-	Global.pain_sfx.play()
+	#if get_node("Enemy").is_on_screen():
+	#if is_on_floor():
+		#if get_node("..").is_on_screen():
+	motion.x = -SPEED
+
 	
 func boost():
 	motion.y = JUMP_SPEED * 2
 	Global.jump_sfx.play()
+
+func _on_Area2D_body_entered(body):
+	print("pepe")
+	#if (get_node(".").is_on_screen):
+	Global.GameState.end_game()
