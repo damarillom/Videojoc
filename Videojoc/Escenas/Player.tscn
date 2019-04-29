@@ -3,10 +3,10 @@
 [ext_resource path="res://Videojoc/Scripts/Player.gd" type="Script" id=1]
 [ext_resource path="res://Videojoc/GFX/Players/spriteWalk1.png" type="Texture" id=2]
 [ext_resource path="res://Videojoc/GFX/Players/spriteWalk2.png" type="Texture" id=3]
-[ext_resource path="res://Videojoc/GFX/Players/spriteAgachado1.png" type="Texture" id=4]
-[ext_resource path="res://Videojoc/GFX/Players/spriteAgachado2.png" type="Texture" id=5]
-[ext_resource path="res://Videojoc/GFX/Players/spritesDie.png" type="Texture" id=6]
-[ext_resource path="res://Videojoc/GFX/Players/DinoStandar.png" type="Texture" id=7]
+[ext_resource path="res://Videojoc/GFX/Players/DinoStandar.png" type="Texture" id=4]
+[ext_resource path="res://Videojoc/GFX/Players/spriteAgachado1.png" type="Texture" id=5]
+[ext_resource path="res://Videojoc/GFX/Players/spriteAgachado2.png" type="Texture" id=6]
+[ext_resource path="res://Videojoc/GFX/Players/spritesDie.png" type="Texture" id=7]
 
 [sub_resource type="SpriteFrames" id=1]
 animations = [ {
@@ -15,24 +15,25 @@ animations = [ {
 "name": "Walk",
 "speed": 5.0
 }, {
-"frames": [ ExtResource( 4 ), ExtResource( 5 ) ],
+"frames": [ ExtResource( 4 ) ],
+"loop": true,
+"name": "Jump",
+"speed": 5.0
+}, {
+"frames": [ ExtResource( 5 ), ExtResource( 6 ) ],
 "loop": true,
 "name": "Agachado",
 "speed": 5.0
 }, {
-"frames": [ ExtResource( 6 ) ],
+"frames": [ ExtResource( 7 ) ],
 "loop": true,
 "name": "Die",
 "speed": 5.0
-}, {
-"frames": [ ExtResource( 7 ) ],
-"loop": true,
-"name": "Jump",
-"speed": 5.0
 } ]
 
-[sub_resource type="RectangleShape2D" id=2]
-extents = Vector2( 36.5905, 44.3298 )
+[sub_resource type="CapsuleShape2D" id=2]
+radius = 24.0615
+height = 35.1211
 
 [node name="Player" type="KinematicBody2D"]
 script = ExtResource( 1 )
@@ -45,3 +46,4 @@ playing = true
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 shape = SubResource( 2 )
+
