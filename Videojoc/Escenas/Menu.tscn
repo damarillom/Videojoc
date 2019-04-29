@@ -61,6 +61,5 @@ text = "Exit"
 __meta__ = {
 "_edit_lock_": true
 }
-
 [connection signal="pressed" from="TextureButton" to="." method="_on_TextureButton_pressed"]
 [connection signal="pressed" from="TextureButton3" to="." method="_on_TextureButton3_pressed"]

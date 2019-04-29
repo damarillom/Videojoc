@@ -36,7 +36,7 @@ tracks/0/keys = {
 position = Vector2( -0.902496, 0.902512 )
 
 [node name="Area2D" type="Area2D" parent="."]
-position = Vector2( 102.559, 0 )
+position = Vector2( 199.037, 0 )
 script = ExtResource( 1 )
 __meta__ = {
 "_edit_lock_": true
@@ -57,7 +57,7 @@ __meta__ = {
 }
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="."]
+autoplay = "walk"
 anims/walk = SubResource( 3 )
 blend_times = [ "walk", "walk", 0.002 ]
-
 [connection signal="body_entered" from="Area2D" to="Area2D" method="_on_Area2D_body_entered"]

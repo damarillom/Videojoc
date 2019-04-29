@@ -6,7 +6,6 @@
 [ext_resource path="res://Videojoc/Escenas/Camera2D.tscn" type="PackedScene" id=4]
 [ext_resource path="res://Videojoc/Escenas/Enemy1.tscn" type="PackedScene" id=5]
 
-
 [node name="Level1" type="Node2D"]
 script = ExtResource( 1 )
 
@@ -30,4 +29,3 @@ position = Vector2( 1282.24, -67.9066 )
 
 [node name="Enemy1" parent="Enemies" instance=ExtResource( 5 )]
 position = Vector2( 507.905, 276.507 )
-
