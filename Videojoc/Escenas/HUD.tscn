@@ -17,6 +17,7 @@ margin_right = 500.0
 margin_bottom = 53.0
 
 [node name="Contador" type="MarginContainer" parent="."]
+editor/display_folded = true
 margin_right = 100.0
 margin_bottom = 53.0
 rect_min_size = Vector2( 100, 40 )

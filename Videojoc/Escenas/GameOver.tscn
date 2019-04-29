@@ -2,7 +2,7 @@
 
 [ext_resource path="res://GameOver.gd" type="Script" id=1]
 [ext_resource path="res://Videojoc/GFX/Background/bg_layer1.png" type="Texture" id=2]
-[ext_resource path="res://Videojoc/Fonts/candles_.ttf" type="DynamicFontData" id=3]
+[ext_resource path="res://Videojoc/Fonts/Comfortaa-Bold.ttf" type="DynamicFontData" id=3]
 
 [sub_resource type="DynamicFont" id=1]
 size = 35
@@ -31,8 +31,10 @@ margin_right = 605.366
 margin_bottom = 265.511
 
 [node name="Label" type="Label" parent="CenterContainer"]
-margin_right = 266.0
-margin_bottom = 46.0
+margin_left = 20.0
+margin_top = 3.0
+margin_right = 246.0
+margin_bottom = 43.0
 custom_fonts/font = SubResource( 1 )
 text = "GAME OVER"
 __meta__ = {
@@ -40,10 +42,10 @@ __meta__ = {
 }
 
 [node name="TextureButton" type="TextureButton" parent="."]
-margin_left = 447.02
-margin_top = 375.251
-margin_right = 487.02
-margin_bottom = 415.251
+margin_left = 447.0
+margin_top = 375.0
+margin_right = 512.0
+margin_bottom = 415.0
 
 [node name="Label" type="Label" parent="TextureButton"]
 margin_right = 40.0
@@ -55,10 +57,10 @@ __meta__ = {
 }
 
 [node name="TextureButton2" type="TextureButton" parent="."]
-margin_left = 448.968
-margin_top = 431.743
-margin_right = 488.968
-margin_bottom = 471.743
+margin_left = 449.0
+margin_top = 432.0
+margin_right = 518.0
+margin_bottom = 472.0
 
 [node name="Label" type="Label" parent="TextureButton2"]
 margin_right = 40.0

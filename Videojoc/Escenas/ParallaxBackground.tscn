@@ -1,0 +1,43 @@
+[gd_scene load_steps=5 format=2]
+
+[ext_resource path="res://Videojoc/GFX/Background/bg_layer1.png" type="Texture" id=1]
+[ext_resource path="res://Videojoc/GFX/Background/bg_layer2.png" type="Texture" id=2]
+[ext_resource path="res://Videojoc/GFX/Background/bg_layer3.png" type="Texture" id=3]
+[ext_resource path="res://Videojoc/GFX/Background/bg_layer4.png" type="Texture" id=4]
+
+[node name="ParallaxBackground" type="ParallaxBackground"]
+
+[node name="ParallaxLayer" type="ParallaxLayer" parent="."]
+motion_mirroring = Vector2( 2048, 2048 )
+
+[node name="Sprite" type="Sprite" parent="ParallaxLayer"]
+position = Vector2( 597.716, -89.5196 )
+scale = Vector2( 1.00046, 0.911882 )
+texture = ExtResource( 1 )
+
+[node name="ParallaxLayer2" type="ParallaxLayer" parent="."]
+motion_mirroring = Vector2( 2048, 0 )
+
+[node name="Sprite" type="Sprite" parent="ParallaxLayer2"]
+position = Vector2( 606.072, 54.1989 )
+scale = Vector2( 1.00038, 0.530098 )
+texture = ExtResource( 2 )
+
+[node name="ParallaxLayer3" type="ParallaxLayer" parent="."]
+motion_scale = Vector2( 1.2, 1 )
+motion_mirroring = Vector2( 2048, 0 )
+
+[node name="Sprite" type="Sprite" parent="ParallaxLayer3"]
+position = Vector2( 603.78, 17.6069 )
+scale = Vector2( 1.00356, 0.56134 )
+texture = ExtResource( 3 )
+
+[node name="ParallaxLayer4" type="ParallaxLayer" parent="."]
+motion_scale = Vector2( 1.5, 1 )
+motion_mirroring = Vector2( 2048, 0 )
+
+[node name="Sprite" type="Sprite" parent="ParallaxLayer4"]
+position = Vector2( 605.364, -1.86072 )
+scale = Vector2( 1.00157, 0.585987 )
+texture = ExtResource( 4 )
+

@@ -2,7 +2,7 @@
 
 [ext_resource path="res://Videojoc/Scripts/Menu.gd" type="Script" id=1]
 [ext_resource path="res://Videojoc/GFX/Background/bg_layer1.png" type="Texture" id=2]
-[ext_resource path="res://Videojoc/Fonts/candles_.ttf" type="DynamicFontData" id=3]
+[ext_resource path="res://Videojoc/Fonts/Comfortaa-Bold.ttf" type="DynamicFontData" id=3]
 
 [sub_resource type="DynamicFont" id=1]
 font_data = ExtResource( 3 )
@@ -33,9 +33,9 @@ __meta__ = {
 
 [node name="TextureButton2" type="TextureButton" parent="."]
 margin_left = 478.0
-margin_top = 221.35
-margin_right = 518.0
-margin_bottom = 243.35
+margin_top = 221.0
+margin_right = 551.0
+margin_bottom = 243.0
 
 [node name="Label" type="Label" parent="TextureButton2"]
 margin_right = 39.0
