@@ -1,0 +1,15 @@
+[remap]
+
+importer="ogg_vorbis"
+type="AudioStreamOGGVorbis"
+path="res://.import/Dangerous Dungeon.ogg-34b7419612738b53b0d1c76e3ec6ab4a.oggstr"
+
+[deps]
+
+source_file="res://Videojoc/SFX/Dangerous Dungeon.ogg"
+dest_files=[ "res://.import/Dangerous Dungeon.ogg-34b7419612738b53b0d1c76e3ec6ab4a.oggstr" ]
+
+[params]
+
+loop=true
+loop_offset=0

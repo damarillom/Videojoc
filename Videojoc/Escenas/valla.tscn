@@ -10,13 +10,21 @@ extents = Vector2( 44.604, 30.5678 )
 
 [node name="Area2D" type="Area2D" parent="."]
 script = ExtResource( 1 )
+__meta__ = {
+"_edit_lock_": true
+}
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
 shape = SubResource( 1 )
+__meta__ = {
+"_edit_lock_": true
+}
 
 [node name="Sprite" type="Sprite" parent="Area2D"]
 position = Vector2( -0.329081, 0.0309029 )
 scale = Vector2( 0.206368, 0.19377 )
 texture = ExtResource( 2 )
-
+__meta__ = {
+"_edit_lock_": true
+}
 [connection signal="body_entered" from="Area2D" to="Area2D" method="_on_Area2D_body_entered"]

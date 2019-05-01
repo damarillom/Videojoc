@@ -1,0 +1,15 @@
+[remap]
+
+importer="ogg_vorbis"
+type="AudioStreamOGGVorbis"
+path="res://.import/Ship.ogg-b46f59db07b17b21f3d7e678a41f1240.oggstr"
+
+[deps]
+
+source_file="res://Videojoc/SFX/Ship.ogg"
+dest_files=[ "res://.import/Ship.ogg-b46f59db07b17b21f3d7e678a41f1240.oggstr" ]
+
+[params]
+
+loop=true
+loop_offset=0
