@@ -9,7 +9,7 @@ const UP = Vector2(0,-1)
 const GRAVITY = 750 #1000  # 3600
 export var world_limit = 500
 func _ready():
-	#Global.Player = self
+	Global.Player = self
 	print("hola")
 	
 func  _physics_process(delta):
@@ -32,8 +32,6 @@ func fall(delta):
 		motion.y += GRAVITY * delta
 		#motion.x = 0
 	if position.y > world_limit:
-		#get_parent().end_game()
-		$AnimatedSprite.play("Die")
 		Global.GameState.end_game()
 	
 		
@@ -62,10 +60,10 @@ func jump():
 		$AnimatedSprite.play("Jump")
 		#Global.jump_sfx.play()
 		
-func hurt():
+"""func hurt():
 	motion.y = JUMP_SPEED
 	Global.pain_sfx.play()
 	
 func boost():
 	motion.y = JUMP_SPEED * 2
-	Global.jump_sfx.play()
+	Global.jump_sfx.play()"""

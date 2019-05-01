@@ -14,4 +14,3 @@ margin_right = 409.467
 margin_bottom = -151.775
 
 [node name="ParallaxBackground" parent="." instance=ExtResource( 2 )]
-

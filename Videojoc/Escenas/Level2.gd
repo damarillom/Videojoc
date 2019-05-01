@@ -2,7 +2,7 @@ extends Node2D
 
 func _ready():
 	Global.GameState = self
-	Global.actualLevel = 1;
+	Global.actualLevel = 2;
 
 func end_game():
 	get_tree().change_scene(Global.gameOver)

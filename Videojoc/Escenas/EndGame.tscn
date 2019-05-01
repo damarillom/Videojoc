@@ -1,9 +1,9 @@
-[gd_scene load_steps=8 format=2]
+[gd_scene load_steps=7 format=2]
 
-[ext_resource path="res://GameOver.gd" type="Script" id=1]
+[ext_resource path="res://EndGame.gd" type="Script" id=1]
 [ext_resource path="res://Videojoc/GFX/Background/bg_layer1.png" type="Texture" id=2]
 [ext_resource path="res://Videojoc/Fonts/Comfortaa-Bold.ttf" type="DynamicFontData" id=3]
-[ext_resource path="res://Videojoc/SFX/Major Loss.ogg" type="AudioStream" id=4]
+[ext_resource path="res://Videojoc/SFX/Chiptronical.ogg" type="AudioStream" id=4]
 
 [sub_resource type="DynamicFont" id=1]
 size = 40
@@ -13,11 +13,7 @@ font_data = ExtResource( 3 )
 size = 23
 font_data = ExtResource( 3 )
 
-[sub_resource type="DynamicFont" id=3]
-size = 23
-font_data = ExtResource( 3 )
-
-[node name="GameOver" type="Node2D"]
+[node name="EndGame" type="Node2D"]
 script = ExtResource( 1 )
 
 [node name="TextureRect" type="TextureRect" parent="."]
@@ -26,46 +22,32 @@ margin_bottom = 40.0
 texture = ExtResource( 2 )
 
 [node name="CenterContainer" type="CenterContainer" parent="."]
-margin_left = 341.314
-margin_top = 248.731
-margin_right = 607.314
-margin_bottom = 294.731
+margin_left = 274.896
+margin_top = 204.285
+margin_right = 721.896
+margin_bottom = 348.285
 
 [node name="Label" type="Label" parent="CenterContainer"]
-margin_left = 4.0
-margin_right = 261.0
-margin_bottom = 46.0
+margin_right = 447.0
+margin_bottom = 144.0
 custom_fonts/font = SubResource( 1 )
-text = "GAME OVER"
+text = "CONGRATULATIONS!
+
+"
 __meta__ = {
 "_edit_lock_": true
 }
 
 [node name="TextureButton" type="TextureButton" parent="."]
-margin_left = 447.0
-margin_top = 375.0
-margin_right = 512.0
-margin_bottom = 415.0
+margin_left = 456.0
+margin_top = 356.272
+margin_right = 525.0
+margin_bottom = 396.272
 
 [node name="Label" type="Label" parent="TextureButton"]
 margin_right = 40.0
 margin_bottom = 14.0
 custom_fonts/font = SubResource( 2 )
-text = "Retry"
-__meta__ = {
-"_edit_lock_": true
-}
-
-[node name="TextureButton2" type="TextureButton" parent="."]
-margin_left = 445.104
-margin_top = 432.0
-margin_right = 514.104
-margin_bottom = 472.0
-
-[node name="Label" type="Label" parent="TextureButton2"]
-margin_right = 40.0
-margin_bottom = 14.0
-custom_fonts/font = SubResource( 3 )
 text = "Menu"
 __meta__ = {
 "_edit_lock_": true
@@ -75,4 +57,3 @@ __meta__ = {
 stream = ExtResource( 4 )
 autoplay = true
 [connection signal="pressed" from="TextureButton" to="." method="_on_TextureButton_pressed"]
-[connection signal="pressed" from="TextureButton2" to="." method="_on_TextureButton2_pressed"]

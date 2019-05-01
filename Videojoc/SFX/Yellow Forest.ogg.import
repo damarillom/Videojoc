@@ -1,0 +1,15 @@
+[remap]
+
+importer="ogg_vorbis"
+type="AudioStreamOGGVorbis"
+path="res://.import/Yellow Forest.ogg-a7f5b194ceae3173d5b827de759a6b1a.oggstr"
+
+[deps]
+
+source_file="res://Videojoc/SFX/Yellow Forest.ogg"
+dest_files=[ "res://.import/Yellow Forest.ogg-a7f5b194ceae3173d5b827de759a6b1a.oggstr" ]
+
+[params]
+
+loop=true
+loop_offset=0
