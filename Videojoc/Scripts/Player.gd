@@ -8,6 +8,12 @@ const JUMP_SPEED = -650  #-1750
 const UP = Vector2(0,-1)
 const GRAVITY = 750 #1000  # 3600
 export var world_limit = 500
+
+signal health_changed
+signal died
+
+export var health = 3
+
 func _ready():
 	#Global.Player = self
 	print("hola")
@@ -69,3 +75,20 @@ func hurt():
 func boost():
 	motion.y = JUMP_SPEED * 2
 	Global.jump_sfx.play()
+
+# When the character dies, we fade the UI
+enum STATES {ALIVE, DEAD}
+var state = STATES.ALIVE
+
+func take_damage(count):
+	if state == STATES.DEAD:
+		return
+
+	Global.health -= count
+	if Global.health <= 0:
+		Global.health = 0
+		state = STATES.DEAD
+		emit_signal("died")
+
+	emit_signal("health_changed", Global.health)
+

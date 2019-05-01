@@ -5,3 +5,5 @@ func _ready():
 
 func end_game():
 	get_tree().change_scene(Global.gameOver)
+	
+	
