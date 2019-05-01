@@ -60,4 +60,5 @@ __meta__ = {
 autoplay = "walk"
 anims/walk = SubResource( 3 )
 blend_times = [ "walk", "walk", 0.002 ]
+
 [connection signal="body_entered" from="Area2D" to="Area2D" method="_on_Area2D_body_entered"]
