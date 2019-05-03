@@ -1,9 +1,10 @@
 [gd_scene load_steps=7 format=2]
 
-[ext_resource path="res://Videojoc/Escenas/LevelsMenu.gd" type="Script" id=1]
+[ext_resource path="res://Videojoc/Scripts/LevelsMenu.gd" type="Script" id=1]
 [ext_resource path="res://Videojoc/GFX/Background/bg_layer1.png" type="Texture" id=2]
 [ext_resource path="res://Videojoc/Fonts/Comfortaa-Bold.ttf" type="DynamicFontData" id=3]
 [ext_resource path="res://Videojoc/SFX/Ship.ogg" type="AudioStream" id=4]
+
 
 [sub_resource type="DynamicFont" id=1]
 size = 40

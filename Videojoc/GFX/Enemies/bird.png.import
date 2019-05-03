@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/spikeMan_walk1.png-8ada796985e94b38b48bd6d776aac0f2.stex"
+path="res://.import/bird.png-a2c43b2cf03d5518f8c97b4f42ca71ac.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Videojoc/GFX/Enemies/spikeMan_walk1.png"
-dest_files=[ "res://.import/spikeMan_walk1.png-8ada796985e94b38b48bd6d776aac0f2.stex" ]
+source_file="res://Videojoc/GFX/Enemies/bird.png"
+dest_files=[ "res://.import/bird.png-a2c43b2cf03d5518f8c97b4f42ca71ac.stex" ]
 
 [params]
 

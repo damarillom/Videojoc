@@ -1,18 +1,18 @@
-[gd_scene load_steps=7 format=2]
+[gd_scene load_steps=8 format=2]
 
 [ext_resource path="res://Videojoc/Scripts/Enemy1.gd" type="Script" id=1]
-[ext_resource path="res://Videojoc/GFX/Enemies/enemy1.png" type="Texture" id=2]
-[ext_resource path="res://Videojoc/GFX/Enemies/enemy2.png" type="Texture" id=3]
+[ext_resource path="res://Videojoc/GFX/Enemies/bird.png" type="Texture" id=2]
+[ext_resource path="res://Videojoc/GFX/Enemies/bird2.png" type="Texture" id=3]
+[ext_resource path="res://Videojoc/GFX/Enemies/bird3.png" type="Texture" id=4]
 
-[sub_resource type="CapsuleShape2D" id=1]
-radius = 45.9567
-height = -0.244308
+[sub_resource type="RectangleShape2D" id=4]
+extents = Vector2( 56.1691, 39.4905 )
 
 [sub_resource type="SpriteFrames" id=2]
 animations = [ {
-"frames": [ ExtResource( 2 ), ExtResource( 3 ) ],
+"frames": [ ExtResource( 2 ), ExtResource( 3 ), ExtResource( 4 ) ],
 "loop": true,
-"name": "Walk",
+"name": "Fly",
 "speed": 5.0
 } ]
 
@@ -31,27 +31,40 @@ tracks/0/keys = {
 "update": 0,
 "values": [ Vector2( 0, 0 ), Vector2( 0, 0 ), Vector2( 400, 0 ), Vector2( 400, 0 ) ]
 }
+tracks/1/type = "value"
+tracks/1/path = NodePath("Area2D/AnimatedSprite:flip_h")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/keys = {
+"times": PoolRealArray( 0.2, 2.7 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 1,
+"values": [ false, true ]
+}
 
-[node name="Enemy1" type="Node2D"]
+[node name="Bird" type="Node2D"]
 position = Vector2( -0.902496, 0.902512 )
 
 [node name="Area2D" type="Area2D" parent="."]
-position = Vector2( 100, 0 )
+position = Vector2( 107.989, 0 )
 script = ExtResource( 1 )
 __meta__ = {
 "_edit_lock_": true
 }
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
-shape = SubResource( 1 )
+shape = SubResource( 4 )
 __meta__ = {
 "_edit_lock_": true
 }
 
 [node name="AnimatedSprite" type="AnimatedSprite" parent="Area2D"]
 frames = SubResource( 2 )
-animation = "Walk"
+animation = "Fly"
 playing = true
+flip_h = true
 __meta__ = {
 "_edit_lock_": true
 }

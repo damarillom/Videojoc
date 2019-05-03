@@ -1,6 +1,6 @@
-[gd_scene load_steps=7 format=2]
+[gd_scene load_steps=8 format=2]
 
-[ext_resource path="res://EndGame.gd" type="Script" id=1]
+[ext_resource path="res://Videojoc/Scripts/EndGame.gd" type="Script" id=1]
 [ext_resource path="res://Videojoc/GFX/Background/bg_layer1.png" type="Texture" id=2]
 [ext_resource path="res://Videojoc/Fonts/Comfortaa-Bold.ttf" type="DynamicFontData" id=3]
 [ext_resource path="res://Videojoc/SFX/Chiptronical.ogg" type="AudioStream" id=4]
@@ -11,6 +11,10 @@ font_data = ExtResource( 3 )
 
 [sub_resource type="DynamicFont" id=2]
 size = 23
+font_data = ExtResource( 3 )
+
+[sub_resource type="DynamicFont" id=3]
+size = 30
 font_data = ExtResource( 3 )
 
 [node name="EndGame" type="Node2D"]
@@ -40,9 +44,9 @@ __meta__ = {
 
 [node name="TextureButton" type="TextureButton" parent="."]
 margin_left = 456.0
-margin_top = 356.272
+margin_top = 377.7
 margin_right = 525.0
-margin_bottom = 396.272
+margin_bottom = 417.7
 
 [node name="Label" type="Label" parent="TextureButton"]
 margin_right = 40.0
@@ -56,4 +60,12 @@ __meta__ = {
 [node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
 stream = ExtResource( 4 )
 autoplay = true
+
+[node name="score" type="Label" parent="."]
+margin_left = 459.734
+margin_top = 299.996
+margin_right = 499.734
+margin_bottom = 334.996
+custom_fonts/font = SubResource( 3 )
+text = "00"
 [connection signal="pressed" from="TextureButton" to="." method="_on_TextureButton_pressed"]

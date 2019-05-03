@@ -23,6 +23,7 @@ margin_bottom = 2048.0
 texture = ExtResource( 2 )
 
 [node name="CenterContainer" type="CenterContainer" parent="."]
+editor/display_folded = true
 margin_left = 399.95
 margin_top = 151.002
 margin_right = 604.95
@@ -38,6 +39,7 @@ __meta__ = {
 }
 
 [node name="TextureButton" type="TextureButton" parent="."]
+editor/display_folded = true
 margin_left = 476.568
 margin_top = 249.728
 margin_right = 527.568
@@ -54,22 +56,25 @@ __meta__ = {
 }
 
 [node name="TextureButton2" type="TextureButton" parent="."]
-margin_left = 456.0
+editor/display_folded = true
+margin_left = 431.64
 margin_top = 303.0
-margin_right = 559.0
+margin_right = 580.64
 margin_bottom = 333.0
 
 [node name="Label" type="Label" parent="TextureButton2"]
 margin_right = 39.0
 margin_bottom = 21.0
 custom_fonts/font = SubResource( 2 )
-text = "Options
+text = "Max. Scores
+
 "
 __meta__ = {
 "_edit_lock_": true
 }
 
 [node name="TextureButton3" type="TextureButton" parent="."]
+editor/display_folded = true
 margin_left = 480.0
 margin_top = 358.0
 margin_right = 527.0
@@ -92,4 +97,5 @@ texture = ExtResource( 4 )
 stream = ExtResource( 5 )
 autoplay = true
 [connection signal="pressed" from="TextureButton" to="." method="_on_TextureButton_pressed"]
+[connection signal="pressed" from="TextureButton2" to="." method="_on_TextureButton2_pressed"]
 [connection signal="pressed" from="TextureButton3" to="." method="_on_TextureButton3_pressed"]
