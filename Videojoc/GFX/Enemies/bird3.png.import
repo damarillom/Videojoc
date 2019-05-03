@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/spikeMan_stand.png-918e98b5033180e148f05ee4fd7b0ee7.stex"
+path="res://.import/bird3.png-cb011ce65133b9fd5a88215de9f3c500.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Videojoc/GFX/Enemies/spikeMan_stand.png"
-dest_files=[ "res://.import/spikeMan_stand.png-918e98b5033180e148f05ee4fd7b0ee7.stex" ]
+source_file="res://Videojoc/GFX/Enemies/bird3.png"
+dest_files=[ "res://.import/bird3.png-cb011ce65133b9fd5a88215de9f3c500.stex" ]
 
 [params]
 

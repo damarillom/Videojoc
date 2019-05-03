@@ -1,6 +1,6 @@
-[gd_scene load_steps=8 format=2]
+[gd_scene load_steps=9 format=2]
 
-[ext_resource path="res://GameOver.gd" type="Script" id=1]
+[ext_resource path="res://Videojoc/Scripts/GameOver.gd" type="Script" id=1]
 [ext_resource path="res://Videojoc/GFX/Background/bg_layer1.png" type="Texture" id=2]
 [ext_resource path="res://Videojoc/Fonts/Comfortaa-Bold.ttf" type="DynamicFontData" id=3]
 [ext_resource path="res://Videojoc/SFX/Major Loss.ogg" type="AudioStream" id=4]
@@ -17,6 +17,10 @@ font_data = ExtResource( 3 )
 size = 23
 font_data = ExtResource( 3 )
 
+[sub_resource type="DynamicFont" id=4]
+size = 30
+font_data = ExtResource( 3 )
+
 [node name="GameOver" type="Node2D"]
 script = ExtResource( 1 )
 
@@ -26,10 +30,10 @@ margin_bottom = 40.0
 texture = ExtResource( 2 )
 
 [node name="CenterContainer" type="CenterContainer" parent="."]
-margin_left = 341.314
-margin_top = 248.731
-margin_right = 607.314
-margin_bottom = 294.731
+margin_left = 337.418
+margin_top = 188.342
+margin_right = 603.418
+margin_bottom = 234.342
 
 [node name="Label" type="Label" parent="CenterContainer"]
 margin_left = 4.0
@@ -74,5 +78,12 @@ __meta__ = {
 [node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
 stream = ExtResource( 4 )
 autoplay = true
+
+[node name="score" type="Label" parent="."]
+margin_left = 449.993
+margin_top = 292.203
+margin_right = 489.993
+margin_bottom = 321.203
+custom_fonts/font = SubResource( 4 )
 [connection signal="pressed" from="TextureButton" to="." method="_on_TextureButton_pressed"]
 [connection signal="pressed" from="TextureButton2" to="." method="_on_TextureButton2_pressed"]

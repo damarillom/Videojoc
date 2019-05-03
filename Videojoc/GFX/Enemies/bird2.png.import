@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/cloud.png-48b3d930722c88e917409b2d66d50b3c.stex"
+path="res://.import/bird2.png-63cbf7419252869748f50dfe105151d7.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Videojoc/GFX/Enemies/cloud.png"
-dest_files=[ "res://.import/cloud.png-48b3d930722c88e917409b2d66d50b3c.stex" ]
+source_file="res://Videojoc/GFX/Enemies/bird2.png"
+dest_files=[ "res://.import/bird2.png-63cbf7419252869748f50dfe105151d7.stex" ]
 
 [params]
 

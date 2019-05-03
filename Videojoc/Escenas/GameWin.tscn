@@ -1,6 +1,6 @@
-[gd_scene load_steps=7 format=2]
+[gd_scene load_steps=8 format=2]
 
-[ext_resource path="res://Videojoc/Escenas/GameWin.gd" type="Script" id=1]
+[ext_resource path="res://Videojoc/Scripts/GameWin.gd" type="Script" id=1]
 [ext_resource path="res://Videojoc/GFX/Background/bg_layer1.png" type="Texture" id=2]
 [ext_resource path="res://Videojoc/Fonts/Comfortaa-Bold.ttf" type="DynamicFontData" id=3]
 [ext_resource path="res://Videojoc/SFX/Central City.ogg" type="AudioStream" id=4]
@@ -13,6 +13,10 @@ font_data = ExtResource( 3 )
 size = 23
 font_data = ExtResource( 3 )
 
+[sub_resource type="DynamicFont" id=3]
+size = 30
+font_data = ExtResource( 3 )
+
 [node name="GameWin" type="Node2D"]
 script = ExtResource( 1 )
 
@@ -22,10 +26,10 @@ margin_bottom = 2048.0
 texture = ExtResource( 2 )
 
 [node name="CenterContainer" type="CenterContainer" parent="."]
-margin_left = 389.605
-margin_top = 229.867
-margin_right = 571.604
-margin_bottom = 275.867
+margin_left = 386.089
+margin_top = 205.254
+margin_right = 568.089
+margin_bottom = 251.254
 
 [node name="Label" type="Label" parent="CenterContainer"]
 margin_right = 182.0
@@ -70,5 +74,13 @@ __meta__ = {
 [node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
 stream = ExtResource( 4 )
 autoplay = true
+
+[node name="score" type="Label" parent="."]
+margin_left = 441.281
+margin_top = 291.843
+margin_right = 481.281
+margin_bottom = 326.843
+custom_fonts/font = SubResource( 3 )
+text = "00"
 [connection signal="pressed" from="TextureButton" to="." method="_on_TextureButton_pressed"]
 [connection signal="pressed" from="TextureButton2" to="." method="_on_TextureButton2_pressed"]

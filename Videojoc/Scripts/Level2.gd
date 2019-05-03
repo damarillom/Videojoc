@@ -1,10 +1,9 @@
 extends Node2D
 
 var timer = null
-
 func _ready():
 	Global.GameState = self
-	Global.actualLevel = 1;
+	Global.actualLevel = 2;
 	timer = Timer.new()
 	timer.set_autostart(true)
 	#timer.set_one_shot(true)

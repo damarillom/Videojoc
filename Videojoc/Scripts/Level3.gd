@@ -1,10 +1,9 @@
 extends Node2D
 
 var timer = null
-
 func _ready():
 	Global.GameState = self
-	Global.actualLevel = 1;
+	Global.actualLevel = 3;
 	timer = Timer.new()
 	timer.set_autostart(true)
 	#timer.set_one_shot(true)
@@ -23,4 +22,4 @@ func end_game():
 func win_game():
 	print("ganaste")
 	#Global.score = 0
-	get_tree().change_scene(Global.gameWin)
+	get_tree().change_scene(Global.endGame)
