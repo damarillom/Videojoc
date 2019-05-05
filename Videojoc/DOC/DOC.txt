@@ -1,0 +1,30 @@
+Nuestro juego (DinoRun) consiste en un plataformas2D, pero con el handicat de que el movimiento es automatico a la derecha por lo que el jugador debe saltar de en el momento preciso para poder superar el nivel.
+
+
+-StoryBoard (Explicación de las escenas):
+	- Bird: Enemigo volador
+	- Camera2D: Camara que se mueve con el personaje
+	- EndGame: Escena que se muestra cuando el jugador ha ganado el juego
+	- Enemy1: Enemigo terrestre del juego
+	- GameOver: Escena que se muestra cuando el jugador pierde la partida
+	- GameWin: Escena que se muestra cuando el jugador supera un nivel (menos el último)
+	- HUD: Muestra la información sobre la partida al jugador
+	- Level1: Diseño del nivel 1 del juego
+	- Level2: Diseño del nivel 2 del juego
+	- Level3: Diseño del nivel 3 del juego
+	- LevelsMenu: Menu de selección de nivel
+	- MaxScore: Escena que muestra las maximas puntuaciones del jugador en cada nivel
+	- Menu: Menu principal del juego, permite acceder a LevelsMenu y a MaxScore
+	- ParallaxBackground: Fondo que se mueve para dar sensación de realidad al juego
+	- Player: Personaje que controla el jugador
+	- Portal: Meta a la que debe llegar el jugador para superar el nivel
+	- vaya: Enemigo estatico del juego
+
+-Trello:
+	- https://trello.com/b/IP5ZausP/dinorun
+	- Invitación: https://trello.com/invite/b/IP5ZausP/465d503ecae35920f6740c49712a2a64/dinorun
+
+-Github: https://github.com/damarillom/Videojoc
+
+-Links de sprites: Para los sprites hemos usado esta pagina, aunque algunos sprites los heos sacado de Google imagenes
+	- https://opengameart.org/
