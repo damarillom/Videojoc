@@ -1,4 +1,6 @@
 extends Node2D
+
+#Leemos la puntuaciones maximas del JSON y las escribimos en labels para msotrarselas al jugador
 func _ready():
 	var file = File.new()
 	file.open(Global.json, file.READ)
@@ -11,6 +13,7 @@ func _ready():
 	score2.set_text(String(json_result["score2"]))
 	var score3 = get_node("score3")
 	score3.set_text(String(json_result["score3"]))
-	
+
+#Cambiamos a la escena del Menu
 func _on_TextureButton_pressed():
 	get_tree().change_scene(Global.menu)
