@@ -15,6 +15,7 @@ func _ready():
 func on_timeout_complete():
 	Global.score += 100
 	print(Global.score)
+	Global.GUI.update_GUI()
 	
 func end_game():
 	var file = File.new()

@@ -82,5 +82,6 @@ margin_right = 481.281
 margin_bottom = 326.843
 custom_fonts/font = SubResource( 3 )
 text = "00"
+
 [connection signal="pressed" from="TextureButton" to="." method="_on_TextureButton_pressed"]
 [connection signal="pressed" from="TextureButton2" to="." method="_on_TextureButton2_pressed"]
