@@ -1,5 +1,6 @@
 Nuestro juego (DinoRun) consiste en un plataformas2D, pero con el handicat de que el movimiento es automatico a la derecha por lo que el jugador debe saltar de en el momento preciso para poder superar el nivel.
 
+- MiniTutorial
 
 -StoryBoard (Explicación de las escenas):
 	- Bird: Enemigo volador
@@ -20,11 +21,16 @@ Nuestro juego (DinoRun) consiste en un plataformas2D, pero con el handicat de qu
 	- Portal: Meta a la que debe llegar el jugador para superar el nivel
 	- vaya: Enemigo estatico del juego
 
--Trello:
-	- https://trello.com/b/IP5ZausP/dinorun
-	- Invitación: https://trello.com/invite/b/IP5ZausP/465d503ecae35920f6740c49712a2a64/dinorun
+- Links:
+	-Trello:
+		- https://trello.com/b/IP5ZausP/dinorun
+		- Invitación: https://trello.com/invite/b/IP5ZausP/465d503ecae35920f6740c49712a2a64/dinorun
 
--Github: https://github.com/damarillom/Videojoc
+	-Github: https://github.com/damarillom/Videojoc
 
--Links de sprites: Para los sprites hemos usado esta pagina, aunque algunos sprites los heos sacado de Google imagenes
-	- https://opengameart.org/
+	-Links de sprites: Para los sprites hemos usado esta pagina, aunque algunos sprites los heos sacado de Google imagenes
+		- https://opengameart.org/
+
+- Dificultades:
+	- Queriamos implementar una barra de vida en el HUD, pero tuvimos dificultades a la hora de implementarla, así que decidimos que el personaje tuviese un solo punto de vida y mostrar en el HUD solamente la puntuación
+	- El TileSet no encaja correctamente, creemos que es un fallo de los Sprites
