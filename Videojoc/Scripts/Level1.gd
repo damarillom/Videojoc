@@ -2,6 +2,7 @@ extends Node2D
 
 var timer = null
 
+#Indicamos en global que este nivel sea el GameState y activamos un timer
 func _ready():
 	Global.GameState = self
 	Global.actualLevel = 1;
@@ -12,11 +13,14 @@ func _ready():
 	timer.connect("timeout", self, "on_timeout_complete")
 	add_child(timer)
 	
+#Usamos el timer para subir la puntuacion 100 puntos cada segundo
 func on_timeout_complete():
 	Global.score += 100
 	print(Global.score)
 	Global.GUI.update_GUI()
-	
+
+#Cuando el jugador muere leemos el JSON y comprobamos si la puntuacion actual es mas alta que la maxima, si es así la sobreescribimos en el JSON
+#Ademas cambiamos a la escena de GameOver	
 func end_game():
 	var file = File.new()
 	file.open(Global.json, file.READ)
@@ -33,7 +37,9 @@ func end_game():
 	#get_node("Label").set_text(json_result[["1"]["name"][1]])
 	#Global.score = 0
 	get_tree().change_scene(Global.gameOver)
-	
+
+#Cuando el jugador supera el nivel leemos el JSON y si ha superado al puntiacion más alta la sobreescribimos
+#Ademas cambiamos la escena de GameWin
 func win_game():
 	print("ganaste")
 	#Global.score = 0
