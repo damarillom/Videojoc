@@ -2,7 +2,7 @@ Nuestro juego (DinoRun) consiste en un plataformas2D, pero con el handicat de qu
 
 - MiniTutorial
 
--StoryBoard (Explicación de las escenas):
+- StoryBoard (Explicación de las escenas):
 	- Bird: Enemigo volador
 	- Camera2D: Camara que se mueve con el personaje
 	- EndGame: Escena que se muestra cuando el jugador ha ganado el juego
@@ -22,15 +22,18 @@ Nuestro juego (DinoRun) consiste en un plataformas2D, pero con el handicat de qu
 	- vaya: Enemigo estatico del juego
 
 - Links:
-	-Trello:
+	- Trello:
 		- https://trello.com/b/IP5ZausP/dinorun
 		- Invitación: https://trello.com/invite/b/IP5ZausP/465d503ecae35920f6740c49712a2a64/dinorun
 
-	-Github: https://github.com/damarillom/Videojoc
+	- Github: https://github.com/damarillom/Videojoc
 
-	-Links de sprites: Para los sprites hemos usado esta pagina, aunque algunos sprites los heos sacado de Google imagenes
+	- Links de sprites: Para los sprites hemos usado esta pagina, aunque algunos sprites los heos sacado de Google imagenes
 		- https://opengameart.org/
+
+	- Video: https://drive.google.com/file/d/1_sQvBiVE3jO_shblRTyjwS2svzFXK7bW/view?usp=sharing
 
 - Dificultades:
 	- Queriamos implementar una barra de vida en el HUD, pero tuvimos dificultades a la hora de implementarla, así que decidimos que el personaje tuviese un solo punto de vida y mostrar en el HUD solamente la puntuación
 	- El TileSet no encaja correctamente, creemos que es un fallo de los Sprites
+	- Queriamos exportar el proyecto a Linux, Windows y Android, pero para este ultimo nos surgieron complicaciones y decidimos solo exportarlo para las otras dos plataformas
